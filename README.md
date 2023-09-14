@@ -15,6 +15,7 @@ Notes app in python
 
 - Andres Parra
 - Mauricio Di Donato Sánchez
+- Andersson Cardenas
 
 
 ### Add remote repository
