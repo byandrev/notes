@@ -5,5 +5,5 @@ router = APIRouter(prefix="/hello")
 
 @router.get("/")
 def hello():
-    return "Hello"
+  return "Hello"
 
