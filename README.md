@@ -10,3 +10,7 @@ Notes app in python
 
 1. Config env file
 2. Run main.py
+
+### Contributors
+
+- Andres Parra
