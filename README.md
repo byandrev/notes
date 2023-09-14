@@ -14,3 +14,4 @@ Notes app in python
 ### Contributors
 
 - Andres Parra
+- Mauricio Di Donato Sánchez
