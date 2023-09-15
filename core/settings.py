@@ -12,4 +12,5 @@ class Settings:
   ENVIRONMENT: str = os.getenv("ENVIRONMENT")
   PORT: int = int(os.getenv("PORT"))
 
+
 settings = Settings()
