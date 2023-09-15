@@ -4,19 +4,14 @@ Notes app in python
 
 ### Installation
 
-`pip install -r requirements.txt`
+1. Install dependencies `pip install -r requirements.txt`
 
 ### Run
 
-1. Config env file
-2. Run main.py
+1. Create and config env file
+2. Run `python main.py` or `py main.py`
 
-### Contributors
-
-- Andres Parra
-- Mauricio Di Donato Sánchez
-- Andersson Cardenas
-
+## Colaborate
 
 ### Add remote repository
 
@@ -25,4 +20,13 @@ Notes app in python
 ### Upload changes
 
 1. Sync your repository `git pull upstream [branch_name]`. Example: `git pull upstream main`
-2. Create pull request
+2. Code and push in your repo
+3. Create pull request
+
+---
+
+### Contributors
+
+- Andres Parra
+- Mauricio Di Donato Sánchez
+- Andersson Cardenas
