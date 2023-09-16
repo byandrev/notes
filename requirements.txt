@@ -3,3 +3,4 @@ fastapi
 python-dotenv
 jinja2
 python-multipart
+pydantic
