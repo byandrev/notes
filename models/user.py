@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional
-from models import note
+from models import Note
 
 class User(BaseModel):
     id: int
@@ -10,7 +10,7 @@ class User(BaseModel):
     email : str
     emailConfirmed: bool
     password: str
-    dailyNote: note #Para la clase Note
+    dailyNote: Note #Para la clase Note
     createdAt: str 
     updatedAt: str 
     description: str
