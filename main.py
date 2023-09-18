@@ -2,9 +2,12 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
+from core import models
 from core.settings import settings
+from db.client import engine
 from routers.base import router
 
+models.Base.metadata.create_all(bind = engine)
 
 def start_application():
   application: FastAPI = FastAPI(title=settings["PROJECT_NAME"],
