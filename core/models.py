@@ -26,7 +26,6 @@ from db.client import Base
 #                  Column('note_id', ForeignKey('note.id'), primary_key = True),
 #                  Column('tag_id', ForeignKey('tag.id'), primary_key = True))
 
-
 class User(Base):
   __tablename__ = 'user'
   id = Column(Integer, primary_key = True)
