@@ -3,7 +3,9 @@ from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from fastapi.staticfiles import StaticFiles
 from starlette.responses import RedirectResponse
+
 from core.settings import settings
+from db.client import engine
 from routers.base import router
 from app import models
 from app.schemas.user import User
