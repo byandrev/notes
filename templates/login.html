@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <main>
     <div class="header">
-      <button>
+      <button id="btn-theme">
         <i class="fa-solid fa-sun"></i>
       </button>
     <button>
@@ -10,6 +10,7 @@
     <button>
       <p>ABOUT US</p>
     </button>
+
   </div>
   <div style="height: 100%;
   align-items: center;
@@ -29,7 +30,7 @@
         </div>
           <button>SUBMIT</button>
       </form>
-      <a  class="mini-text">Already have an account ? <u style="color: sandybrown; text-decoration: none;"> Log in</u></a>
+      <a  class="mini-text">Already have an account ? <u style="color: var(--login-color); text-decoration: none;"> Log in</u></a>
     </div>
   </div>
 </main>
