@@ -6,6 +6,7 @@
   --button-font : black;
   --input-color : rgba(255, 255, 255, 0.32);
   --overlay : rgba(0, 0, 0, 0.15);
+  --login-color : sandybrown;
 }
 
 * {
@@ -141,7 +142,7 @@ button, .btn{
   position: absolute;
   left: 12px;
   top: 17.5px;
-  color: var(--button-font);
+  color: black;
   opacity: 0.32;
 
 }
@@ -151,7 +152,7 @@ button, .btn{
 }
 
 .input-gray::placeholder {
-  color: var(--button-font);
+  color: black;
   opacity: 0.35; /* Firefox */
 }
 
