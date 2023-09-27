@@ -25,7 +25,7 @@ class Note(Base):
 
 class User(Base):
   __tablename__ = 'user'
-  
+
   id = mapped_column(Integer, primary_key = True)
   first_name = Column(String(255))
   last_name = Column(String(255))
@@ -36,5 +36,5 @@ class User(Base):
   created_at = Column(DateTime())
   description = Column(String(255))
   profile_picture = Column(String(255))
-  
+
   notes = relationship("Note", back_populates="owner")

@@ -34,19 +34,6 @@ async def create_user(database: Session = Depends(get_db)):
   return user
 
 
-@router.get("/create-note")
-async def create_user(database: Session = Depends(get_db)):
-  note = Note(title="Prueba#2",
-              content="Hello!!  222222",
-              created_at=datetime.now(),
-              updated_at=datetime.now(),
-              private=False,
-              owner_id="2")
-  note.collaborators.append(user)
-  database.add(note)
-  database.commit()
-  return note
-
 @router.get("/users")
 async def get_users(database: Session = Depends(get_db)):
   users = database.query(User).all()
@@ -56,9 +43,4 @@ async def get_users(database: Session = Depends(get_db)):
 @router.get("/notes")
 async def get_notes(database: Session = Depends(get_db)):
   notes = database.query(Note).all()
-  return notes
-
-@router.get("/notes/{id}")
-async def get_users(id: str, database: Session = Depends(get_db)):
-  notes = database.query(Note).filter_by(owner_id = id).all()
   return notes
