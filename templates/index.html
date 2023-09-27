@@ -1,5 +1,26 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+<main>
+  <div class="header">
+    <button id="btn-theme">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+  
+    <button>
+      <p>LOG IN</p>
+    </button>
+    <button>
+      <p>ABOUT US</p>
+    </button>
+  </div>
+  <div class="page-title-container">
+    <div>
+      <i class="fa-solid fa-list-check"></i>
+      <p><span class="notes">Notes </span> <span>Website</span></p>
+      <div class="login-button"></div>
+    </div>
+    <a class="btn" href="/login">SIGN IN</a>
+  </div>
 
-{% block content %}
-  <p>Home</p>
+  <br />
+</main>
 {% endblock content %}

@@ -1,5 +1,37 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+<main>
+    <div class="header">
+      <button>
+        <i class="fa-solid fa-sun"></i>
+      </button>
+    <button>
+      <a class="btn-link" href="/">HOME</a>
+    </button>
+    <button>
+      <p>ABOUT US</p>
+    </button>
+  </div>
+  <div style="height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;">
+    <div class="sign-in">
+      <p>SIGN IN</p>
+      <form class="inner-form"  action="">
+        <div class="input-div">
+          <input class="input-gray one" type="text" placeholder="Email"/>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="input-div">
+          <input class="input-gray two" type="password" placeholder="Password"/>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+          <button>SUBMIT</button>
+      </form>
+      <a  class="mini-text">Already have an account ? <u style="color: sandybrown; text-decoration: none;"> Log in</u></a>
+    </div>
+  </div>
+</main>
 
-{% block content %}
-  <p>Login</p>
 {% endblock content %}
