@@ -1,36 +1,54 @@
 {% extends 'base.html' %} {% block content %}
 <main>
-    <div class="header">
-      <button id="btn-theme">
-        <i class="fa-solid fa-sun"></i>
-      </button>
+  <div class="header">
+    <button id="btn-theme">
+      <i class="fa-solid fa-sun"></i>
+    </button>
     <button>
       <a class="btn-link" href="/">HOME</a>
     </button>
     <button>
       <p>ABOUT US</p>
     </button>
-
   </div>
-  <div style="height: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 100%;">
+  <div
+    style="
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+    "
+  >
     <div class="sign-in">
       <p>SIGN IN</p>
-      <form class="inner-form"  action="">
+      <form class="inner-form" action="">
         <div class="input-div">
-          <input class="input-gray one" type="text" placeholder="Email"/>
+          <input
+            class="input-gray one"
+            type="email"
+            required
+            placeholder="Email"
+          />
           <i class="fa-solid fa-envelope"></i>
         </div>
         <div class="input-div">
-          <input class="input-gray two" type="password" placeholder="Password"/>
+          <input
+            class="input-gray two"
+            type="password"
+            required
+            placeholder="Password"
+          />
           <i class="fa-solid fa-lock"></i>
         </div>
-          <button>SUBMIT</button>
+        <button>SUBMIT</button>
       </form>
-      <a  class="mini-text">Already have an account ? <u style="color: var(--login-color); text-decoration: none;"> Log in</u></a>
+      <a class="mini-text"
+        >Already have an account ?
+        <u style="color: var(--login-color); text-decoration: none">
+          Log in</u
+        ></a
+      >
     </div>
   </div>
 </main>
