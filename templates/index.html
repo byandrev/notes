@@ -4,21 +4,47 @@
     <button id="btn-theme">
       <i class="fa-solid fa-sun"></i>
     </button>
-  
-    <button>
-      <p>LOG IN</p>
-    </button>
     <button>
       <p>ABOUT US</p>
     </button>
   </div>
-  <div class="page-title-container">
-    <div>
-      <i class="fa-solid fa-list-check"></i>
-      <p><span class="notes">Notes </span> <span>Website</span></p>
-      <div class="login-button"></div>
+  <div class="main-home-container">
+    <div class="left-side">
+      <div class="page-title">
+        <div
+          style="
+            position: absolute;
+            background-color: var(--font-text);
+            width: 20px;
+            height: 90%;
+            left: -30px;
+            top: -5px;
+          "
+        ></div>
+        <p>
+          <span class="notes"
+            >Notes <br /><a class="subtitle">Website</a>
+          </span>
+        </p>
+      </div>
+      <div class="buttons">
+        <a class="btn" href="/signin">SIGN IN</a>
+        <a class="secondary-btn" href="/login"><u>LOG IN</u></a>
+      </div>
     </div>
-    <a class="btn" href="/login">SIGN IN</a>
+    <div class="right-side">
+      <textarea class="overlay" id="myInput" cols="30" rows="10"></textarea>
+      <p id="placeholder">
+          <span class="quoted"
+            >MARCUS AURELIUS <br /><br><a class="quote">“Everything we hear is an opinion, not a fact. Everything we see is a
+              perspective, not the truth.” </a> <br> <br>
+              <a style="font-style: italic;
+              color: var(--placeholder);
+              "> Start writing your thoughts right here...</a> 
+          </span>
+        </p>
+      
+    </div>
   </div>
 
   <br />
