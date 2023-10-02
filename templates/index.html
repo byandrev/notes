@@ -1,11 +1,11 @@
 {% extends 'base.html' %} {% block content %}
 <main>
   <div class="header">
-    <button id="btn-theme">
-      <i class="fa-solid fa-sun"></i>
-    </button>
     <button>
       <p>ABOUT US</p>
+    </button>
+    <button id="btn-theme">
+      <i class="fa-solid fa-sun"></i>
     </button>
   </div>
   <div class="main-home-container">
@@ -33,17 +33,18 @@
       </div>
     </div>
     <div class="right-side">
+      
       <textarea class="overlay" id="myInput" cols="30" rows="10"></textarea>
       <p id="placeholder">
-          <span class="quoted"
-            >MARCUS AURELIUS <br /><br><a class="quote">“Everything we hear is an opinion, not a fact. Everything we see is a
-              perspective, not the truth.” </a> <br> <br>
-              <a style="font-style: italic;
-              color: var(--placeholder);
-              "> Start writing your thoughts right here...</a> 
-          </span>
+          <span> <a style="font-size: larger;">MARCUS AURELIUS</a> <br/> <br/>'Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.' <br/><br/>
+            <a style="font-size: larger;
+            color: var(--placeholder);
+            font-size: 90%;">Start writing your thoughts today...</a></span>
         </p>
-      
+        <div class="buttons">
+          <a class="btn" href="/signin">SIGN IN</a>
+          <a class="secondary-btn" href="/login"><u>LOG IN</u></a>
+        </div>
     </div>
   </div>
 
