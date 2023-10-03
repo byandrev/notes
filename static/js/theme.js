@@ -8,13 +8,15 @@ function changeTheme(theme){
   const root = document.documentElement
   if(theme === "light"){
     root.style.setProperty("--font-text", "#000000");
-    root.style.setProperty("--background", "#FFFFFF");
+    root.style.setProperty("--background", "#FDFFF4");
     root.style.setProperty("--button-color", "#000000");
     root.style.setProperty("--button-font", "#000000");
     root.style.setProperty("--overlay", "rgba(255, 255, 255, 0.35)");
     root.style.setProperty("--login-color" , "rgb(30, 24, 157)");
     root.style.setProperty("--login-screen","radial-gradient(circle at 0% 0%, rgba(255, 90, 90, 0.15) 0%, rgba(250, 47, 47, 0.15) 50%, rgba(0, 37, 255, .15) 100%) 0px 0px ");
     root.style.setProperty("--placeholder" , "rgba(0, 0, 0, 0.41)" );
+    root.style.setProperty("--editor-sidebar","#DDDFD5");
+    root.style.setProperty("--editor-color","#FDFFF4");
     localStorage.setItem("theme", "light");
   }
   if(theme === "dark"){
@@ -26,6 +28,8 @@ function changeTheme(theme){
     root.style.setProperty("--login-color" , "#FF7495" );
     root.style.setProperty("--login-screen","radial-gradient(circle at 0% 0%, rgba(55, 71, 162, 0.59) 0%, rgba(73, 87, 164, 0.59) 50%, rgba(250, 8, 168, 0.59) 100%) 0px 0px");
     root.style.setProperty("--placeholder" , "rgba(255, 255, 255, 0.41)" );
+    root.style.setProperty("--editor-sidebar","#121212");
+    root.style.setProperty("--editor-color","#000000");
     localStorage.setItem("theme", "dark");
   } 
 }

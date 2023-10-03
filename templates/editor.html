@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block content %}
+<main style="padding-left: 250px;">
+  <div class="main-home-container">
+    <div class="sidebar">
+      <div class="sidebar-buttons">
+        <i class="fa-solid fa-user"></i>
+        <p>MY NOTES</p>
+        <i class="fa-solid fa-plus"></i>
+        <button id="btn-theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+      <div class="notes">
+        <button class="note">
+          <p>NOTE 1</p>
+        </button>
+        <button class="note">
+          <p>NOTE 2</p>
+        </button>
+        <button class="note">
+          <p>NOTE 3</p>
+        </button>
+      </div>
+    </div>
+
+      <textarea class="editor" cols="30" rows="10">TITLE
+          </textarea>
+  </div>
+</main>
+
+{% endblock content %}
