@@ -15,4 +15,7 @@ settings = {
   "DB_URL": os.getenv("DB_URL"),
   "DB_USER": os.getenv("DB_USER"),
   "DB_PASSWORD": os.getenv("DB_PASSWORD"),
+  "ACCESS_TOKEN_EXPIRE_MINUTES": 1440,
+  "SECRET_KEY": os.getenv("SECRET_KEY"),
+  "ALGORITHM": "HS256"
 }

@@ -9,11 +9,29 @@ class User(BaseModel):
   last_name: str
   birthday: datetime
   email: str
-  email_confirmed: bool
-  password: str
   created_at: datetime
   description: str
   profile_picture: str
 
   class Config:
     orm_mode = True
+
+
+class UserIn(BaseModel):
+  first_name: str
+  last_name: str
+  birthday: datetime
+  email: str
+  description: str
+  profile_picture: str
+  password: str
+
+
+class UserInDB(User):
+  hashed_password: str
+  email_confirmed: bool
+
+
+class UserResponse(User):
+  pass
+  
