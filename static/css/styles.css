@@ -9,6 +9,8 @@
   --overlay : rgba(255, 255, 255, 0.35);
   --login-color : radial-gradient(circle at 0% 0%, rgba(255, 90, 90, 0.15) 0%, rgba(250, 47, 47, 0.15) 50%, rgba(0, 37, 255, .15) 100%) 0px 0px ;
   --placeholder : rgba(0, 0, 0, 0.41);
+  --editor-color: #FDFFF4;
+  --editor-sidebar: #DDDFD5;
 }
 
 * {
@@ -32,6 +34,7 @@ main {
   align-items: center;
   background-color: var(--background);
   height: 100vh;
+  color: var();
 }
 
 .main-home-container{
@@ -69,7 +72,6 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-  
 }
 
 .left-side{
@@ -187,6 +189,8 @@ button:hover,
   color: var(--font-text);
   font-size: 1.5rem;
   padding-top: 50px;
+  border-style: none;
+  border: none;
 }
 
 .sign-in u,
@@ -382,6 +386,93 @@ textarea:focus {
   .overlay{
     font-size: 1rem;
   }
-  
 
 }
+
+.sidebar {
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  flex-direction: column;
+  margin-right: 10rem;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--editor-sidebar);
+  color: var(--font-text);
+}
+
+.editor{
+  height: 100%;
+  width: 100%;
+  background-color: var(--editor-color);
+  border: none;
+  border-style: none;
+  padding: 40px 0 0 50px; 
+  font-size: 3rem;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  color: var(--font-text);
+}
+
+.sidebar #btn-theme{
+  border: none;
+  border-style: none;
+  padding: 0;
+}
+
+.sidebar-buttons p,
+.notes p{
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.sidebar-buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-text);
+  gap: 14px;
+}
+
+.notes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.note{
+  background: var(--login-screen);
+  z-index: 100;
+  border-style: solid;
+  width: 200px;
+  border: none;
+  transition: border 0.3s;
+}
+
+.note p{
+  text-align: start;
+}
+
+.note:hover{
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.note:active{
+  border-style: solid;
+  border: 1px;
+}
+
+
+
+
+
