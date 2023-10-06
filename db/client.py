@@ -1,8 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from core.settings import settings
 
-DATABASE_URL = "mysql+mysqlconnector://root@localhost:3306/notes_app"
+DATABASE = f"{settings['DB_USER']}:{settings['DB_PASSWORD']}"
+DATABASE += f"@{settings['DB_URL']}/{settings['DB_NAME']}"
+DATABASE_URL = "mysql+mysqlconnector://" + DATABASE
 
 engine = create_engine(DATABASE_URL)
 
