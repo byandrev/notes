@@ -174,7 +174,7 @@ button:hover,
   justify-content: center;
   background: var(--login-screen);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2.2rem;
   align-self: center;
   width: 100%;
   max-width: 350px;
