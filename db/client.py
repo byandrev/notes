@@ -3,7 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from core.settings import settings
 
-DATABASE = f"{settings['DB_USER']}:{settings['DB_PASSWORD']}@{settings['DB_URL']}/{settings['DB_NAME']}"
+DATABASE = f"{settings['DB_USER']}:{settings['DB_PASSWORD']}"
+DATABASE += f"@{settings['DB_URL']}/{settings['DB_NAME']}"
 DATABASE_URL = "mysql+mysqlconnector://" + DATABASE
 
 engine = create_engine(DATABASE_URL)
